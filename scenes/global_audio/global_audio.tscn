@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://bjs6vyfqvo5aw"]
+
+[ext_resource type="AudioStream" uid="uid://d0pvxr2m3dwdd" path="res://scenes/global_audio/AdhesiveWombat - Night Shade.mp3" id="1_yk0cf"]
+[ext_resource type="Script" path="res://scenes/global_audio/global_audio.gd" id="2_rtwxw"]
+
+[node name="GlobalAudio" type="AudioStreamPlayer"]
+stream = ExtResource("1_yk0cf")
+volume_db = -10.0
+script = ExtResource("2_rtwxw")

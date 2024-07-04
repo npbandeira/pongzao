@@ -1,0 +1,75 @@
+[gd_scene load_steps=5 format=3 uid="uid://dctd1xpk5kq1t"]
+
+[ext_resource type="FontFile" uid="uid://o7dcmfc7ciuv" path="res://assets/fonte/PublicPixel-z84yD.ttf" id="1_wa5rk"]
+[ext_resource type="PackedScene" uid="uid://bwwd575l0bxs8" path="res://scenes/menu/back_buttom.tscn" id="2_mo6w5"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_7w8ak"]
+font = ExtResource("1_wa5rk")
+font_size = 60
+
+[sub_resource type="LabelSettings" id="LabelSettings_yho5j"]
+font = ExtResource("1_wa5rk")
+font_size = 40
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -348.0
+offset_top = -274.0
+offset_right = 348.0
+offset_bottom = 274.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ColorRect/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 50
+alignment = 1
+
+[node name="Label" type="Label" parent="ColorRect/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Controles
+"
+label_settings = SubResource("LabelSettings_7w8ak")
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="ColorRect/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "W S - Movimentar
+ESC - Menu
+R - Reiniciar"
+label_settings = SubResource("LabelSettings_yho5j")
+horizontal_alignment = 1
+
+[node name="BackButtom" parent="." instance=ExtResource("2_mo6w5")]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 386.0
+offset_top = 50.0
+offset_right = 574.0
+offset_bottom = 88.0
+grow_horizontal = 2

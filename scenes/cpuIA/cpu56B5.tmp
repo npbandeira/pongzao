@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://b6cixpxxwv2mg"]
+
+[ext_resource type="Script" path="res://scenes/cpuIA/cpu_ia.gd" id="1_n1psn"]
+[ext_resource type="Texture2D" uid="uid://cfwhfujee1hyv" path="res://assets/sprites/jogador.png" id="1_xumfb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_abwd7"]
+size = Vector2(20, 130)
+
+[node name="CPUIA" type="CharacterBody2D" groups=["jogadores"]]
+script = ExtResource("1_n1psn")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_xumfb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_abwd7")

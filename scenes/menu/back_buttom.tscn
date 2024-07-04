@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bwwd575l0bxs8"]
+
+[ext_resource type="FontFile" uid="uid://o7dcmfc7ciuv" path="res://assets/fonte/PublicPixel-z84yD.ttf" id="1_dk3on"]
+[ext_resource type="Script" path="res://scenes/global_audio/backbuttom.gd" id="2_qjwfn"]
+
+[node name="BackButtom" type="Button"]
+offset_right = 188.0
+offset_bottom = 38.0
+theme_override_fonts/font = ExtResource("1_dk3on")
+theme_override_font_sizes/font_size = 30
+text = "VOLTAR"
+flat = true
+script = ExtResource("2_qjwfn")
+scene_path = "res://scenes/menu/menu.tscn"
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
+[connection signal="pressed" from="." to="." method="_on_pressed"]
