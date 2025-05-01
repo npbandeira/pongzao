@@ -26,9 +26,8 @@ metadata/_edit_vertical_guides_ = [-354.0]
 
 [node name="Game" type="Node2D" parent="."]
 
-[node name="CPUIA" parent="Game" node_paths=PackedStringArray("bola") instance=ExtResource("4_npfvr")]
+[node name="CPUIA" parent="Game" instance=ExtResource("4_npfvr")]
 position = Vector2(1187, 357)
-bola = NodePath("../Bola")
 
 [node name="Lateral" type="StaticBody2D" parent="Game"]
 position = Vector2(640, 0)

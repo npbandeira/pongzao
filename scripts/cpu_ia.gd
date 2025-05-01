@@ -2,8 +2,8 @@ extends CharacterBody2D
 class_name CPUIA
 
 enum STATES {WAITING, REASONING, ACTING}
-
-@onready var bola: Bola = %Bola
+#Bola
+@export var bola: Bola
 
 var state: STATES
 

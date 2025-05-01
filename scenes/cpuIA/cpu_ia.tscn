@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://b6cixpxxwv2mg"]
 
-[ext_resource type="Script" path="res://scenes/cpuIA/cpu_ia.gd" id="1_n1psn"]
+[ext_resource type="Script" uid="uid://qvveyjexvwpm" path="res://scripts/cpu_ia.gd" id="1_n1psn"]
 [ext_resource type="Texture2D" uid="uid://cfwhfujee1hyv" path="res://assets/sprites/jogador.png" id="1_xumfb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_abwd7"]

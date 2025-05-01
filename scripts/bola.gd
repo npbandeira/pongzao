@@ -25,28 +25,28 @@ var win_size: Vector2
 func _ready():
 	win_size = get_viewport_rect().size
 	rodar_timer()
+	
 
 #region reseta a posição da bola
-
 func resetar_bola() -> void:
 	position.x = win_size.x / 2
-	position.y = win_size.y / 2 
+	position.y = win_size.y / 2
 	velocidade = VELOCIDADE_INICIAL
 	escolher_direcao_inicial()
-	
 #endregion
+
 func _physics_process(delta):
-	velocity = velocidade * direcao  * delta
+	velocity = velocidade * direcao * delta
 	var collision = move_and_collide(velocity)
 	var collider
 	if collision:
 		collider = collision.get_collider()
-		if collider is Jogador or collider is CPUIA:
+		if collider is Jogador or collider is CPUIA: # Verifica se é um jogador ou CPU
 			velocidade += ACCELERACAO
-			direcao = f_nova_direcao(collider) 
+			direcao = f_nova_direcao(collider)
 			som_impacto_jogador.play()
 		else:
-			direcao = direcao.bounce(collision.get_normal()) 
+			direcao = direcao.bounce(collision.get_normal())
 			som_impacto_barreira.play()
 	
 #temporizador
@@ -55,11 +55,11 @@ func rodar_timer() -> void:
 	
 # gera um direção para bola
 func escolher_direcao_inicial() -> void:
-	var angle: int = randi_range(15,45)
+	var angle: int = randi_range(15, 45)
 	var x_aleatorio = [-1, 1].pick_random()
 	var y_aleatorio = [-1, 1].pick_random()
 	# calcula o angulo da direção
-	direcao_inicial = Vector2(cos(deg_to_rad(angle)),sin(deg_to_rad(angle)))
+	direcao_inicial = Vector2(cos(deg_to_rad(angle)), sin(deg_to_rad(angle)))
 	
 	direcao_inicial.x *= x_aleatorio
 	direcao_inicial.y *= y_aleatorio
@@ -69,15 +69,15 @@ func escolher_direcao_inicial() -> void:
 func f_nova_direcao(collider) -> Vector2:
 	var bola_y = position.y
 	var raquete_y = collider.position.y
-	var distancia  = bola_y - raquete_y
-	var nova_direcao:= Vector2()
+	var distancia = bola_y - raquete_y
+	var nova_direcao := Vector2()
 	
 	if direcao.x > 0:
 		nova_direcao.x = -1
 	else:
 		nova_direcao.x = 1
 		
-	nova_direcao.y = (distancia /(collider.altura_player/ 2)) * 0.6
+	nova_direcao.y = (distancia / (collider.altura_player / 2)) * 0.6
 	return nova_direcao.normalized()
 	
 func _on_timer_timeout():

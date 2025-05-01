@@ -4,7 +4,7 @@ class_name Jogador
 @export var jogador1: bool
  
 var velocidade_do_jogador: int = 500
-var altura_player : int
+var altura_player: int
 
 func _ready():
 	altura_player = $sprite.get_texture().get_size().y
@@ -30,4 +30,4 @@ func movimentar_jogador(delta: float) -> void:
 
 func limitar_movimento_do_jogador() -> void:
 	#impede que o jogador saia da tela
-	position.y = clamp(position.y, 64,655) # limitar valores em um range especifico
+	position.y = clamp(position.y, 64, 655) # limitar valores em um range especifico

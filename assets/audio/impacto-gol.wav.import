@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://c1xbqgayal7ol"
-path="res://.godot/imported/impacto-gol.wav-687c2aa893f2762ade83ab284ef49259.sample"
+path="res://.godot/imported/impacto-gol.wav-91ae24551975870ccb3e55b2b2e32e00.sample"
 
 [deps]
 
-source_file="res://assets/sons/impacto-gol.wav"
-dest_files=["res://.godot/imported/impacto-gol.wav-687c2aa893f2762ade83ab284ef49259.sample"]
+source_file="res://assets/audio/impacto-gol.wav"
+dest_files=["res://.godot/imported/impacto-gol.wav-91ae24551975870ccb3e55b2b2e32e00.sample"]
 
 [params]
 

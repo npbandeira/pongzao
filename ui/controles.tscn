@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://dctd1xpk5kq1t"]
 
-[ext_resource type="FontFile" uid="uid://o7dcmfc7ciuv" path="res://assets/fonte/PublicPixel-z84yD.ttf" id="1_wa5rk"]
-[ext_resource type="PackedScene" uid="uid://bwwd575l0bxs8" path="res://scenes/menu/back_buttom.tscn" id="2_mo6w5"]
+[ext_resource type="FontFile" uid="uid://o7dcmfc7ciuv" path="res://assets/fonts/PublicPixel-z84yD.ttf" id="1_wa5rk"]
+[ext_resource type="PackedScene" uid="uid://bwwd575l0bxs8" path="res://ui/back_buttom.tscn" id="2_mo6w5"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_7w8ak"]
 font = ExtResource("1_wa5rk")
@@ -73,3 +73,4 @@ offset_top = 50.0
 offset_right = 574.0
 offset_bottom = 88.0
 grow_horizontal = 2
+script = null

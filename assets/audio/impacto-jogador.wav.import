@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://cwgtu2xmjtnea"
-path="res://.godot/imported/impacto-jogador.wav-6e93c32cef52e508bd048791f6958a3d.sample"
+path="res://.godot/imported/impacto-jogador.wav-aca72a5121125fe376c4e4818fead05f.sample"
 
 [deps]
 
-source_file="res://assets/sons/impacto-jogador.wav"
-dest_files=["res://.godot/imported/impacto-jogador.wav-6e93c32cef52e508bd048791f6958a3d.sample"]
+source_file="res://assets/audio/impacto-jogador.wav"
+dest_files=["res://.godot/imported/impacto-jogador.wav-aca72a5121125fe376c4e4818fead05f.sample"]
 
 [params]
 

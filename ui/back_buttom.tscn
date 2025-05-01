@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bwwd575l0bxs8"]
 
-[ext_resource type="FontFile" uid="uid://o7dcmfc7ciuv" path="res://assets/fonte/PublicPixel-z84yD.ttf" id="1_dk3on"]
-[ext_resource type="Script" path="res://scenes/global_audio/backbuttom.gd" id="2_qjwfn"]
+[ext_resource type="FontFile" uid="uid://o7dcmfc7ciuv" path="res://assets/fonts/PublicPixel-z84yD.ttf" id="1_dk3on"]
+[ext_resource type="Script" uid="uid://bf2yws2v5dre8" path="res://scripts/backbuttom.gd" id="2_qjwfn"]
 
 [node name="BackButtom" type="Button"]
 offset_right = 188.0
